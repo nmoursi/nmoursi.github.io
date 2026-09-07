@@ -10,7 +10,6 @@
 <link rel="canonical" href="https://nmoursi.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a02c3a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fff' text-anchor='middle'%3ENM%3C/text%3E%3C/svg%3E">
 
-<!-- link previews -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Nada Moursi">
 <meta property="og:description" content="M.S. Applied AI at Northeastern University · Research Assistant, Human-Centered AI Lab. Human–AI interaction, adaptive learning, and AI-agent evaluation.">
@@ -20,7 +19,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,11 +30,15 @@
 
   <!-- ================= SIDEBAR ================= -->
   <aside class="sidebar">
-    <img class="photo" src="images/nada.jpg" alt="Nada Moursi" width="152" height="152"
-         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo photo-fallback',textContent:'NM'}))">
+    <div class="photo-wrap">
+      <img class="photo" src="images/nada.jpg" alt="Nada Moursi" width="152" height="152"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo photo-fallback',textContent:'NM'}))">
+    </div>
 
     <h1 class="name">Nada&nbsp;Moursi</h1>
     <p class="tagline">Human–AI Interaction · Applied AI</p>
+
+    <p class="status"><span class="dot" aria-hidden="true"></span>Research Assistant, HCAI Lab</p>
 
     <p class="affil">
       M.S. Applied Artificial Intelligence<br>
@@ -46,7 +49,6 @@
     <nav class="links" aria-label="Profiles and contact">
       <a href="mailto:moursi.n@northeastern.edu">Email</a>
       <a href="files/Nada_Moursi_CV.pdf">CV</a>
-      <a href="files/Nada_Moursi_Resume.pdf">Résumé</a>
       <a href="https://github.com/nmoursi" rel="me">GitHub</a>
       <a href="https://linkedin.com/in/nadamoursi1" rel="me">LinkedIn</a>
     </nav>
@@ -55,9 +57,9 @@
       <a href="#about">About</a>
       <a href="#news">News</a>
       <a href="#research">Research</a>
+      <a href="#uxagent">UXAgent</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -82,17 +84,19 @@
       </p>
 
       <p>
-        My main project leads the quantitative analysis for a CMU and U.S. Bank collaboration
-        evaluating AI-driven quest personalization inside a live Roblox financial-literacy game — a
-        randomized field trial rather than a benchmark. Alongside it, I contribute qualitative coding
-        and thematic analysis to <em>UXAgent</em>, which uses LLM agents as simulated usability-testing
-        participants.
+        My work runs in two directions. One is <strong>measurement</strong>: I lead the quantitative
+        analysis for a CMU and U.S. Bank collaboration evaluating AI-driven quest personalization
+        inside a live Roblox financial-literacy game — a randomized field trial, not a benchmark.
+        The other is <strong>method</strong>: on <em>UXAgent</em> I build the qualitative analysis
+        pipeline that turns LLM-agent interaction traces into evidence a UX researcher can actually
+        defend, and I run the formative and evaluation studies that test whether any of it holds up.
       </p>
 
       <p>
         Before graduate school I spent several years shipping products — most recently as a Product
-        Manager at Microsoft across Skype and Microsoft Clarity, running A/B experiments and onboarding
-        analyses. That's where the interest in measuring real outcomes, rather than reported ones, began.
+        Manager at Microsoft across Skype and Microsoft Clarity, running A/B experiments and
+        onboarding analyses. That's where the interest in measuring real outcomes, rather than
+        reported ones, began.
       </p>
 
       <ul class="tags" aria-label="Research interests">
@@ -101,7 +105,7 @@
         <li>AI-Agent Evaluation</li>
         <li>Adaptive Learning</li>
         <li>Randomized Field Experiments</li>
-        <li>Mixed-Methods UX Research</li>
+        <li>Qualitative Methods at Scale</li>
       </ul>
     </section>
 
@@ -111,6 +115,10 @@
         <li>
           <span class="when">2026</span>
           <span class="what"><em>Adaptive Learning in the Wild</em> submitted to <strong>KDD 2027</strong> as first author.</span>
+        </li>
+        <li>
+          <span class="when">2026</span>
+          <span class="what">Building <em>UXAgent</em> v2 — qualitative coding pipeline, evaluation protocol, and a formative interview study with UX practitioners.</span>
         </li>
         <li>
           <span class="when">Jul 2026</span>
@@ -132,7 +140,7 @@
 
       <article class="pub">
         <h3>Adaptive Learning in the Wild: A Randomized Trial of AI-Driven Quest Selection on Roblox</h3>
-        <p class="byline"><strong>Nada Moursi</strong> (first author)</p>
+        <p class="byline"><strong>Nada Moursi</strong> <span class="sep">·</span> first author</p>
         <p class="venue"><span class="pill">Submitted · KDD 2027</span></p>
         <p>
           A live randomized trial comparing fixed quest sequencing against Bayesian Knowledge
@@ -145,18 +153,18 @@
 
       <article class="pub">
         <h3>UXAgent: Simulating Usability Testing of Web Design with LLM Agents as Participants</h3>
-        <p class="byline">Co-author</p>
+        <p class="byline">Co-author <span class="sep">·</span> qualitative analysis pipeline, evaluation protocol, formative study</p>
         <p class="venue"><span class="pill pill-quiet">In preparation</span></p>
         <p>
-          An LLM-agent system that lets UX researchers dry-run usability studies with simulated
-          participants interacting with live websites. I contribute qualitative coding and thematic
-          analysis of participant behavior, trust, and perceptions of AI-agent systems.
+          An LLM-agent system that lets UX researchers dry-run a usability study — with simulated
+          participants interacting with live websites — before spending a real participant pool on a
+          study design that may not work. <a href="#uxagent">See what I build on it ↓</a>
         </p>
       </article>
 
       <article class="pub">
         <h3>Ensemble-Based Network Intrusion Detection System</h3>
-        <p class="byline">Co-author · Undergraduate thesis, AUC</p>
+        <p class="byline">Co-author <span class="sep">·</span> undergraduate thesis, AUC</p>
         <p class="venue"><span class="pill pill-quiet">2023</span></p>
         <p>
           Ensemble machine learning and deep learning classifiers for network intrusion detection,
@@ -164,6 +172,87 @@
           resulting paper.
         </p>
       </article>
+    </section>
+
+    <!-- ============ UXAGENT DEEP DIVE ============ -->
+    <section id="uxagent">
+      <h2>UXAgent — What I Build</h2>
+
+      <p class="lede-sm">
+        Simulated participants are easy. <em>Trustworthy findings</em> from simulated participants
+        are the hard part — and that's the half I own.
+      </p>
+
+      <div class="work-grid">
+
+        <article class="work">
+          <p class="work-tag">Pipeline</p>
+          <h3>Qualitative coding, three stages</h3>
+          <p>
+            Designed and implemented the pipeline that turns raw agent interaction traces into
+            analyzable qualitative data: <strong>per-session coding</strong> → <strong>cross-session
+            coordination</strong> → <strong>coded summary</strong>. Each stage has a written spec, a
+            typed schema, and a CLI, so a run is reproducible rather than a one-off prompt.
+          </p>
+          <p class="stack"><code>session_codes.json</code> <code>consolidated_codebook.json</code> <code>trace_summary.json</code></p>
+        </article>
+
+        <article class="work">
+          <p class="work-tag">Evidence</p>
+          <h3>A codebook you can audit</h3>
+          <p>
+            The consolidated codebook carries prevalence counts (<em>k</em>/<em>N</em>), affected runs,
+            and representative quotes for every code — so a finding in the final report traces back to
+            specific turns in specific sessions. I added quality rules that stop large studies from
+            collapsing into universal themes, filtering tautological and non-behavioral codes.
+          </p>
+        </article>
+
+        <article class="work">
+          <p class="work-tag">Human oversight</p>
+          <h3>The researcher stays in the loop</h3>
+          <p>
+            Built the human review layer — approve, flag, or rewrite any code definition before it
+            reaches the report — plus a codebook assistant and a written human-oversight spec for what
+            happens when a researcher disagrees with an auto-generated finding. Structured feedback and
+            revision, not hand-editing Markdown.
+          </p>
+        </article>
+
+        <article class="work">
+          <p class="work-tag">Evaluation</p>
+          <h3>UXAgent evaluation study protocol</h3>
+          <p>
+            Authored the evaluation protocol and a gold-standard report for a pilot study — CHI-style
+            findings with evidence, prevalence, limitations, and recommendations — used as the quality
+            target the analysis agent is scored against, together with a report-quality rubric and a
+            minimum-<em>N</em> policy for demographic segment claims.
+          </p>
+        </article>
+
+        <article class="work">
+          <p class="work-tag">Formative study</p>
+          <h3>Understanding challenges in designing and validating usability studies</h3>
+          <p>
+            An interview study with UX practitioners on how study designs actually get validated
+            today — where pilots fall short, what goes uncaught until the main study, and which of
+            those gaps a pre-study simulation could plausibly close. This is the empirical grounding
+            for the system's motivation.
+          </p>
+        </article>
+
+        <article class="work">
+          <p class="work-tag">Literature</p>
+          <h3>Why pilots can't validate a study design</h3>
+          <p>
+            Built the argument from the methodology literature: pilot studies are formally defined as
+            <em>feasibility</em> instruments, and their results are statistically uninterpretable as
+            design validation. That reframing is what motivates a pre-study feedback loop — and it's
+            the gap UXAgent is positioned to fill.
+          </p>
+        </article>
+
+      </div>
     </section>
 
     <section id="experience">
@@ -177,8 +266,8 @@
           <p>
             Research with Prof. Dakuo Wang's group on human–AI interaction, AI-agent evaluation, and
             adaptive learning. Lead quantitative analysis of a randomized field study of an AI-driven
-            adaptive learning system deployed in a live Roblox environment; conduct qualitative coding
-            and thematic analysis of UX research data.
+            adaptive learning system in a live Roblox environment; build the qualitative coding and
+            evaluation infrastructure for UXAgent.
           </p>
         </div>
       </article>
@@ -226,18 +315,6 @@
       </article>
 
       <article class="entry">
-        <p class="when">Jan 2021 —<br>Mar 2021</p>
-        <div class="what">
-          <h3>App Developer Intern, then Research Intern</h3>
-          <p class="role">Nexus Analytica · Cairo, Egypt</p>
-          <p>
-            Built Flutter-based assessment prototypes for behavioral and cognitive data collection;
-            organized research datasets and ran quantitative analysis in Python.
-          </p>
-        </div>
-      </article>
-
-      <article class="entry">
         <p class="when">Jun 2022 —<br>Jun 2023</p>
         <div class="what">
           <h3>Vice President, CSE Association</h3>
@@ -249,10 +326,22 @@
           </p>
         </div>
       </article>
+
+      <article class="entry">
+        <p class="when">Jan 2021 —<br>Mar 2021</p>
+        <div class="what">
+          <h3>App Developer Intern, then Research Intern</h3>
+          <p class="role">Nexus Analytica · Cairo, Egypt</p>
+          <p>
+            Built Flutter-based assessment prototypes for behavioral and cognitive data collection;
+            organized research datasets and ran quantitative analysis in Python.
+          </p>
+        </div>
+      </article>
     </section>
 
     <section id="education">
-      <h2>Education</h2>
+      <h2>Education &amp; Projects</h2>
 
       <article class="entry">
         <p class="when">Expected<br>May 2027</p>
@@ -272,24 +361,9 @@
           <h3>B.Sc. in Computer Science</h3>
           <p class="role">The American University in Cairo · Cairo, Egypt</p>
           <p>
-            Thesis: <em>Ensemble-Based Network Intrusion Detection System</em>. Coursework in Algorithms,
-            Deep Learning, Operating Systems, Computer Networks, Software Engineering, and Digital Forensics.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section id="projects">
-      <h2>Selected Projects</h2>
-
-      <article class="entry">
-        <p class="when">2023</p>
-        <div class="what">
-          <h3>Ensemble-Based Network Intrusion Detection System</h3>
-          <p class="role">Undergraduate thesis</p>
-          <p>
-            A network intrusion detection system built on ensemble machine learning and deep learning
-            classifiers, improving detection accuracy by 25%.
+            Thesis: <em>Ensemble-Based Network Intrusion Detection System</em> — ensemble ML and deep
+            learning classifiers, improving detection accuracy by 25%. Coursework in Algorithms, Deep
+            Learning, Operating Systems, Computer Networks, and Digital Forensics.
           </p>
         </div>
       </article>
@@ -317,7 +391,7 @@
         <dd>Pandas, NumPy, Matplotlib, TensorFlow, PyTorch, statistical analysis, experimental design</dd>
 
         <dt>Research methods</dt>
-        <dd>Randomized field experiments, regression analysis, qualitative coding, thematic analysis</dd>
+        <dd>Randomized field experiments, regression analysis, qualitative coding, thematic analysis, interview studies, codebook development</dd>
 
         <dt>Product &amp; analytics</dt>
         <dd>A/B testing, Kusto Query Language, Power BI, Jira, roadmap development, Agile delivery</dd>
@@ -335,8 +409,8 @@
         I'm based in Boston, MA, and I'm always glad to talk about human–AI interaction research.
       </p>
       <p class="contact-row">
-        <a class="btn" href="files/Nada_Moursi_CV.pdf">Download CV</a>
-        <a class="btn btn-quiet" href="files/Nada_Moursi_Resume.pdf">Download résumé</a>
+        <a class="btn" href="mailto:moursi.n@northeastern.edu">Get in touch</a>
+        <a class="btn btn-quiet" href="files/Nada_Moursi_CV.pdf">Download CV</a>
       </p>
     </section>
 
@@ -360,7 +434,7 @@
   "alumniOf": { "@type": "Organization", "name": "The American University in Cairo" },
   "address": { "@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA" },
   "knowsAbout": ["Human-AI Interaction", "Human-Centered AI", "Adaptive Learning",
-                 "AI Agent Evaluation", "Randomized Field Experiments"],
+                 "AI Agent Evaluation", "Randomized Field Experiments", "Qualitative Coding"],
   "sameAs": ["https://github.com/nmoursi", "https://linkedin.com/in/nadamoursi1"]
 }
 </script>
@@ -368,24 +442,22 @@
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// highlight the section currently in view in the sidebar nav
+// --- sidebar nav follows the section in view ---
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var links = [].slice.call(document.querySelectorAll('.toc a'));
   if (!links.length || !('IntersectionObserver' in window)) return;
 
   var byId = {};
   links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
 
-  var visible = new Set();
+  var seen = new Set();
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
-      if (e.isIntersecting) visible.add(e.target.id); else visible.delete(e.target.id);
+      if (e.isIntersecting) seen.add(e.target.id); else seen.delete(e.target.id);
     });
     var order = Object.keys(byId);
-    var current = order.find(function (id) { return visible.has(id); });
-    order.forEach(function (id) {
-      byId[id].classList.toggle('active', id === current);
-    });
+    var current = order.find(function (id) { return seen.has(id); });
+    order.forEach(function (id) { byId[id].classList.toggle('active', id === current); });
   }, { rootMargin: '-10% 0px -70% 0px' });
 
   Object.keys(byId).forEach(function (id) {
@@ -393,6 +465,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     if (el) obs.observe(el);
   });
 })();
+
 </script>
 </body>
 </html>

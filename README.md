@@ -7,8 +7,7 @@ Personal academic site for Nada Moursi, served by GitHub Pages at https://nmours
     index.html                    all page content
     style.css                     all styling (light + dark mode, responsive)
     images/nada.jpg               headshot (optional — falls back to an "NM" monogram)
-    files/Nada_Moursi_CV.pdf      academic CV
-    files/Nada_Moursi_Resume.pdf  industry resume
+    files/Nada_Moursi_CV.pdf      CV (phone number redacted before publishing)
 
 ## Publishing
 
