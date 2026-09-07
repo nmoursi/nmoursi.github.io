@@ -4,11 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nada Moursi</title>
-<meta name="description" content="Nada Moursi — Applied AI master's student at Northeastern University and Research Assistant in the Human-Centered AI Lab. Human–AI interaction, adaptive learning, and AI-agent evaluation.">
+<meta name="description" content="Nada Moursi — M.S. Applied AI at Northeastern University and Research Assistant in the Human-Centered AI Lab. Human–AI interaction, adaptive learning, and AI-agent evaluation.">
+<meta name="author" content="Nada Moursi">
+
+<link rel="canonical" href="https://nmoursi.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a02c3a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fff' text-anchor='middle'%3ENM%3C/text%3E%3C/svg%3E">
+
+<!-- link previews -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Nada Moursi">
+<meta property="og:description" content="M.S. Applied AI at Northeastern University · Research Assistant, Human-Centered AI Lab. Human–AI interaction, adaptive learning, and AI-agent evaluation.">
+<meta property="og:url" content="https://nmoursi.github.io/">
+<meta property="og:image" content="https://nmoursi.github.io/images/nada.jpg">
+<meta name="twitter:card" content="summary">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,107 +29,139 @@
 
 <div class="wrap">
 
-  <!-- ============ SIDEBAR ============ -->
+  <!-- ================= SIDEBAR ================= -->
   <aside class="sidebar">
-    <img class="photo" src="images/nada.jpg" alt="Nada Moursi"
+    <img class="photo" src="images/nada.jpg" alt="Nada Moursi" width="152" height="152"
          onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo photo-fallback',textContent:'NM'}))">
 
-    <h1 class="name">Nada Moursi</h1>
+    <h1 class="name">Nada&nbsp;Moursi</h1>
     <p class="tagline">Human–AI Interaction · Applied AI</p>
 
     <p class="affil">
       M.S. Applied Artificial Intelligence<br>
-      Northeastern University<br>
+      <span class="org">Northeastern University</span><br>
       <span class="muted">Human-Centered AI Lab</span>
     </p>
 
     <nav class="links" aria-label="Profiles and contact">
       <a href="mailto:moursi.n@northeastern.edu">Email</a>
       <a href="files/Nada_Moursi_CV.pdf">CV</a>
-      <a href="files/Nada_Moursi_Resume.pdf">Resume</a>
-      <a href="https://github.com/nmoursi">GitHub</a>
-      <a href="https://linkedin.com/in/nadamoursi1">LinkedIn</a>
+      <a href="files/Nada_Moursi_Resume.pdf">Résumé</a>
+      <a href="https://github.com/nmoursi" rel="me">GitHub</a>
+      <a href="https://linkedin.com/in/nadamoursi1" rel="me">LinkedIn</a>
     </nav>
 
     <nav class="toc" aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#interests">Research Interests</a>
+      <a href="#news">News</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
   </aside>
 
-  <!-- ============ MAIN ============ -->
+  <!-- ================= MAIN ================= -->
   <main id="main">
 
     <section id="about">
       <h2>About</h2>
-      <p>
-        I am a master's student in Applied Artificial Intelligence at Northeastern University
-        and a Research Assistant in the
-        <a href="https://www.dakuowang.com/">Human-Centered AI Lab</a>, where I work with
-        Prof. Dakuo Wang on human–AI interaction, AI-agent evaluation, adaptive learning, and the
-        responsible deployment of AI-driven systems.
-      </p>
-      <p>
-        My current work studies how AI systems behave once they leave the lab: I lead the quantitative
-        analysis for a CMU and U.S. Bank collaboration evaluating AI-driven quest personalization inside a
-        live Roblox financial-literacy game, and I contribute qualitative coding and thematic analysis to
-        research on LLM agents as simulated usability-testing participants.
-      </p>
-      <p>
-        Before graduate school I spent several years building products — most recently as a Product Manager
-        at Microsoft across Skype and Microsoft Clarity — which is where my interest in measuring what
-        systems actually do for the people using them began.
-      </p>
-    </section>
 
-    <section id="interests">
-      <h2>Research Interests</h2>
-      <ul class="tags">
+      <p class="lede">
+        I study what AI systems actually do for people once they leave the lab — and I measure it
+        with randomized experiments in live products.
+      </p>
+
+      <p>
+        I'm a master's student in Applied Artificial Intelligence at Northeastern University and a
+        Research Assistant in the Human-Centered AI Lab, where I work with Prof. Dakuo Wang on
+        human–AI interaction, AI-agent evaluation, adaptive learning, and the responsible deployment
+        of AI-driven systems.
+      </p>
+
+      <p>
+        My main project leads the quantitative analysis for a CMU and U.S. Bank collaboration
+        evaluating AI-driven quest personalization inside a live Roblox financial-literacy game — a
+        randomized field trial rather than a benchmark. Alongside it, I contribute qualitative coding
+        and thematic analysis to <em>UXAgent</em>, which uses LLM agents as simulated usability-testing
+        participants.
+      </p>
+
+      <p>
+        Before graduate school I spent several years shipping products — most recently as a Product
+        Manager at Microsoft across Skype and Microsoft Clarity, running A/B experiments and onboarding
+        analyses. That's where the interest in measuring real outcomes, rather than reported ones, began.
+      </p>
+
+      <ul class="tags" aria-label="Research interests">
         <li>Human–AI Interaction</li>
         <li>Human-Centered AI</li>
         <li>AI-Agent Evaluation</li>
-        <li>Adaptive &amp; Personalized Learning</li>
+        <li>Adaptive Learning</li>
         <li>Randomized Field Experiments</li>
         <li>Mixed-Methods UX Research</li>
+      </ul>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li>
+          <span class="when">2026</span>
+          <span class="what"><em>Adaptive Learning in the Wild</em> submitted to <strong>KDD 2027</strong> as first author.</span>
+        </li>
+        <li>
+          <span class="when">Jul 2026</span>
+          <span class="what">Joined State Street — Charles River Development in IT delivery project management.</span>
+        </li>
+        <li>
+          <span class="when">Dec 2025</span>
+          <span class="what">Joined the Human-Centered AI Lab at Northeastern as a Research Assistant.</span>
+        </li>
+        <li>
+          <span class="when">Sep 2025</span>
+          <span class="what">Started the M.S. in Applied Artificial Intelligence at Northeastern University.</span>
+        </li>
       </ul>
     </section>
 
     <section id="research">
       <h2>Research &amp; Publications</h2>
 
-      <article class="entry">
+      <article class="pub">
         <h3>Adaptive Learning in the Wild: A Randomized Trial of AI-Driven Quest Selection on Roblox</h3>
-        <p class="meta">First author · Submitted to KDD 2027</p>
+        <p class="byline"><strong>Nada Moursi</strong> (first author)</p>
+        <p class="venue"><span class="pill">Submitted · KDD 2027</span></p>
         <p>
-          A live randomized trial comparing fixed quest sequencing against Bayesian Knowledge Tracing–based
-          personalization, evaluated across engagement, assessment performance, skill change, motivation, and
-          reward participation. Analysis uses regression, interaction, subgroup, and robustness models on
-          randomized experimental data.
+          A live randomized trial comparing fixed quest sequencing against Bayesian Knowledge
+          Tracing–based personalization, measured across engagement, assessment performance, skill
+          change, motivation, and reward participation. I lead the analysis — regression, interaction,
+          subgroup, and robustness models on randomized experimental data — in collaboration with
+          Carnegie Mellon University and U.S. Bank.
         </p>
       </article>
 
-      <article class="entry">
+      <article class="pub">
         <h3>UXAgent: Simulating Usability Testing of Web Design with LLM Agents as Participants</h3>
-        <p class="meta">Co-author · Manuscript in progress</p>
+        <p class="byline">Co-author</p>
+        <p class="venue"><span class="pill pill-quiet">In preparation</span></p>
         <p>
-          An LLM-agent system that lets UX researchers dry-run usability studies with simulated participants
-          interacting with live websites. I contribute qualitative coding and thematic analysis of participant
-          behavior, trust, and perceptions of AI-agent systems.
+          An LLM-agent system that lets UX researchers dry-run usability studies with simulated
+          participants interacting with live websites. I contribute qualitative coding and thematic
+          analysis of participant behavior, trust, and perceptions of AI-agent systems.
         </p>
       </article>
 
-      <article class="entry">
-        <h3>Research Assistant — Human-Centered AI Lab, Northeastern University</h3>
-        <p class="meta">Boston, MA · Dec 2025 – Present</p>
+      <article class="pub">
+        <h3>Ensemble-Based Network Intrusion Detection System</h3>
+        <p class="byline">Co-author · Undergraduate thesis, AUC</p>
+        <p class="venue"><span class="pill pill-quiet">2023</span></p>
         <p>
-          Research with Prof. Dakuo Wang's group on human–AI interaction, AI-agent evaluation, adaptive
-          learning, and responsible deployment of AI-driven systems. Quantitative analysis of randomized
-          experimental data and qualitative coding of UX research data.
+          Ensemble machine learning and deep learning classifiers for network intrusion detection,
+          improving detection accuracy by 25%. I directed project milestones and co-authored the
+          resulting paper.
         </p>
       </article>
     </section>
@@ -126,46 +170,84 @@
       <h2>Experience</h2>
 
       <article class="entry">
-        <h3>State Street — Charles River Development</h3>
-        <p class="meta">IT Delivery Project Management · Boston, MA · Jul 2026 – Present</p>
-        <p>
-          Coordinate technology delivery across business, engineering, QA, and operations teams supporting
-          financial-services platforms — milestones, dependencies, risks, controls, and release readiness.
-          Analyze production/test configuration differences and support validation to improve deployment accuracy.
-        </p>
+        <p class="when">Dec 2025 —<br>Present</p>
+        <div class="what">
+          <h3>Research Assistant</h3>
+          <p class="role">Human-Centered AI Lab, Northeastern University · Boston, MA</p>
+          <p>
+            Research with Prof. Dakuo Wang's group on human–AI interaction, AI-agent evaluation, and
+            adaptive learning. Lead quantitative analysis of a randomized field study of an AI-driven
+            adaptive learning system deployed in a live Roblox environment; conduct qualitative coding
+            and thematic analysis of UX research data.
+          </p>
+        </div>
       </article>
 
       <article class="entry">
-        <h3>Microsoft</h3>
-        <p class="meta">Product Manager · Hybrid, Egypt · Feb 2024 – Aug 2025</p>
-        <p>
-          Led cross-functional product initiatives across Skype and Microsoft Clarity. Ran A/B experiments and
-          analyzed onboarding funnels with SQL, Kusto Query Language, and Power BI — increasing engagement by
-          10% and setup completion by 7%. Launched automated onboarding for the Clarity WordPress plugin
-          (+10% activation, −16% support escalations), and supported privacy-conscious Skype advertising
-          experiments generating roughly $300K in incremental revenue.
-        </p>
+        <p class="when">Jul 2026 —<br>Present</p>
+        <div class="what">
+          <h3>IT Delivery Project Management</h3>
+          <p class="role">State Street — Charles River Development · Boston, MA</p>
+          <p>
+            Coordinate technology delivery across business, engineering, QA, and operations teams
+            supporting financial-services platforms — milestones, dependencies, risks, controls, and
+            release readiness. Analyze production and test environment configuration differences and
+            support validation to improve deployment accuracy.
+          </p>
+        </div>
       </article>
 
       <article class="entry">
-        <h3>Wasla Browser</h3>
-        <p class="meta">Junior Product Owner · Cairo, Egypt · Jun 2023 – Nov 2023<br>
-        Product Intern · Jan 2023 – Mar 2023</p>
-        <p>
-          Led buy-now-pay-later feature delivery and streamlined key user flows, increasing checkout completion
-          by 13% and reducing drop-off by 5%. Managed sprint planning, backlog grooming, and secure transaction
-          and repayment requirements for Bravo Wallet.
-        </p>
+        <p class="when">Feb 2024 —<br>Aug 2025</p>
+        <div class="what">
+          <h3>Product Manager</h3>
+          <p class="role">Microsoft · Hybrid, Egypt</p>
+          <p>
+            Led cross-functional product initiatives across Skype and Microsoft Clarity. Ran A/B
+            experiments and onboarding-funnel analyses in SQL, Kusto Query Language, and Power BI,
+            increasing engagement 10% and setup completion 7%. Launched automated onboarding for the
+            Clarity WordPress plugin (+10% activation, −16% support escalations), and supported
+            privacy-conscious Skype advertising experiments generating roughly $300K in incremental revenue.
+          </p>
+        </div>
       </article>
 
       <article class="entry">
-        <h3>Nexus Analytica</h3>
-        <p class="meta">App Developer Intern · Feb 2021 – Mar 2021<br>
-        Research Intern · Jan 2021 – Feb 2021</p>
-        <p>
-          Built Flutter-based assessment prototypes for behavioral and cognitive data collection; organized
-          research datasets and ran quantitative analysis in Python.
-        </p>
+        <p class="when">Jan 2023 —<br>Nov 2023</p>
+        <div class="what">
+          <h3>Junior Product Owner, then Product Intern</h3>
+          <p class="role">Wasla Browser · Cairo, Egypt</p>
+          <p>
+            Led buy-now-pay-later feature delivery and streamlined key user flows, increasing checkout
+            completion 13% and reducing drop-off 5%. Managed sprint planning, backlog grooming, and
+            secure transaction and repayment requirements for Bravo Wallet.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="when">Jan 2021 —<br>Mar 2021</p>
+        <div class="what">
+          <h3>App Developer Intern, then Research Intern</h3>
+          <p class="role">Nexus Analytica · Cairo, Egypt</p>
+          <p>
+            Built Flutter-based assessment prototypes for behavioral and cognitive data collection;
+            organized research datasets and ran quantitative analysis in Python.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="when">Jun 2022 —<br>Jun 2023</p>
+        <div class="what">
+          <h3>Vice President, CSE Association</h3>
+          <p class="role">The American University in Cairo</p>
+          <p>
+            Coached Egypt's RoboCup team to first place nationally, led five-plus technical workshops
+            and ECPC training sessions, and secured over $20,000 in sponsorships from Dell, Siemens,
+            and the AUC School of Sciences and Engineering.
+          </p>
+        </div>
       </article>
     </section>
 
@@ -173,21 +255,27 @@
       <h2>Education</h2>
 
       <article class="entry">
-        <h3>Northeastern University</h3>
-        <p class="meta">M.S. in Applied Artificial Intelligence · Boston, MA · Expected May 2027</p>
-        <p>
-          GPA 4.0/4.0. Coursework in Applied Machine Learning, Applied Artificial Intelligence,
-          Natural Language Processing, and Research Writing.
-        </p>
+        <p class="when">Expected<br>May 2027</p>
+        <div class="what">
+          <h3>M.S. in Applied Artificial Intelligence</h3>
+          <p class="role">Northeastern University · Boston, MA</p>
+          <p>
+            GPA 4.0/4.0. Coursework in Applied Machine Learning, Applied Artificial Intelligence,
+            Natural Language Processing, and Research Writing.
+          </p>
+        </div>
       </article>
 
       <article class="entry">
-        <h3>The American University in Cairo</h3>
-        <p class="meta">B.Sc. in Computer Science · Cairo, Egypt · Dec 2023</p>
-        <p>
-          Thesis: <em>Ensemble-Based Network Intrusion Detection System</em>. Coursework in Algorithms,
-          Deep Learning, Operating Systems, Computer Networks, Software Engineering, and Digital Forensics.
-        </p>
+        <p class="when">Dec 2023</p>
+        <div class="what">
+          <h3>B.Sc. in Computer Science</h3>
+          <p class="role">The American University in Cairo · Cairo, Egypt</p>
+          <p>
+            Thesis: <em>Ensemble-Based Network Intrusion Detection System</em>. Coursework in Algorithms,
+            Deep Learning, Operating Systems, Computer Networks, Software Engineering, and Digital Forensics.
+          </p>
+        </div>
       </article>
     </section>
 
@@ -195,32 +283,27 @@
       <h2>Selected Projects</h2>
 
       <article class="entry">
-        <h3>Ensemble-Based Network Intrusion Detection System</h3>
-        <p class="meta">Undergraduate thesis · 2023</p>
-        <p>
-          A network intrusion detection system built on ensemble machine learning and deep learning
-          classifiers, improving detection accuracy by 25%. Directed project milestones and co-authored the
-          resulting paper.
-        </p>
+        <p class="when">2023</p>
+        <div class="what">
+          <h3>Ensemble-Based Network Intrusion Detection System</h3>
+          <p class="role">Undergraduate thesis</p>
+          <p>
+            A network intrusion detection system built on ensemble machine learning and deep learning
+            classifiers, improving detection accuracy by 25%.
+          </p>
+        </div>
       </article>
 
       <article class="entry">
-        <h3>Doctory — Healthcare Management System</h3>
-        <p class="meta">2022</p>
-        <p>
-          Full-stack system built with Node.js, Flutter, and MySQL, with RESTful APIs for patient records,
-          appointments, and role-based access.
-        </p>
-      </article>
-
-      <article class="entry">
-        <h3>Vice President, CSE Association — AUC</h3>
-        <p class="meta">Jun 2022 – Jun 2023</p>
-        <p>
-          Coached Egypt's RoboCup team to first place nationally, led five-plus technical workshops and ECPC
-          training sessions, and secured over $20,000 in sponsorships from Dell, Siemens, and the AUC School
-          of Sciences and Engineering.
-        </p>
+        <p class="when">2022</p>
+        <div class="what">
+          <h3>Doctory — Healthcare Management System</h3>
+          <p class="role">Full-stack application</p>
+          <p>
+            Backend and frontend built with Node.js, Flutter, and MySQL, with RESTful APIs for patient
+            records, appointments, and role-based access.
+          </p>
+        </div>
       </article>
     </section>
 
@@ -234,12 +317,12 @@
         <dd>Pandas, NumPy, Matplotlib, TensorFlow, PyTorch, statistical analysis, experimental design</dd>
 
         <dt>Research methods</dt>
-        <dd>Randomized experiments, regression analysis, qualitative coding, thematic analysis</dd>
+        <dd>Randomized field experiments, regression analysis, qualitative coding, thematic analysis</dd>
 
         <dt>Product &amp; analytics</dt>
-        <dd>Jira, Power BI, Kusto Query Language, A/B testing, roadmap development, Agile delivery</dd>
+        <dd>A/B testing, Kusto Query Language, Power BI, Jira, roadmap development, Agile delivery</dd>
 
-        <dt>Development tools</dt>
+        <dt>Tools</dt>
         <dd>FastAPI, Django, React, Flutter, Git, Docker, Postman</dd>
       </dl>
     </section>
@@ -247,9 +330,13 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        The best way to reach me is by email at
+        The best way to reach me is email —
         <a href="mailto:moursi.n@northeastern.edu">moursi.n@northeastern.edu</a>.
-        I'm based in Boston, MA.
+        I'm based in Boston, MA, and I'm always glad to talk about human–AI interaction research.
+      </p>
+      <p class="contact-row">
+        <a class="btn" href="files/Nada_Moursi_CV.pdf">Download CV</a>
+        <a class="btn btn-quiet" href="files/Nada_Moursi_Resume.pdf">Download résumé</a>
       </p>
     </section>
 
@@ -260,6 +347,52 @@
   </main>
 </div>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nada Moursi",
+  "url": "https://nmoursi.github.io/",
+  "image": "https://nmoursi.github.io/images/nada.jpg",
+  "email": "mailto:moursi.n@northeastern.edu",
+  "jobTitle": "Research Assistant",
+  "affiliation": { "@type": "Organization", "name": "Northeastern University" },
+  "alumniOf": { "@type": "Organization", "name": "The American University in Cairo" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA" },
+  "knowsAbout": ["Human-AI Interaction", "Human-Centered AI", "Adaptive Learning",
+                 "AI Agent Evaluation", "Randomized Field Experiments"],
+  "sameAs": ["https://github.com/nmoursi", "https://linkedin.com/in/nadamoursi1"]
+}
+</script>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// highlight the section currently in view in the sidebar nav
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+
+  var visible = new Set();
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) visible.add(e.target.id); else visible.delete(e.target.id);
+    });
+    var order = Object.keys(byId);
+    var current = order.find(function (id) { return visible.has(id); });
+    order.forEach(function (id) {
+      byId[id].classList.toggle('active', id === current);
+    });
+  }, { rootMargin: '-10% 0px -70% 0px' });
+
+  Object.keys(byId).forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) obs.observe(el);
+  });
+})();
+</script>
 </body>
 </html>
