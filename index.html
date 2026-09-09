@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nada Moursi</title>
-<meta name="description" content="Nada Moursi — Human–Computer Interaction and Human-Centered AI. Research Assistant in the Human-Centered AI Lab at Northeastern University, studying how people interact with AI agents and adaptive systems.">
+<meta name="description" content="Nada Moursi — M.S. student and Research Assistant in the Human-Centered AI Lab at Northeastern University, working with Prof. Dakuo Wang on human-computer interaction and human-centered AI.">
 <meta name="author" content="Nada Moursi">
 
 <link rel="canonical" href="https://nmoursi.github.io/">
@@ -12,10 +12,27 @@
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Nada Moursi">
-<meta property="og:description" content="Human–Computer Interaction · Human-Centered AI. I study how people interact with AI systems, and how we can design those systems to better support human goals, judgment, and behavior.">
+<meta property="og:description" content="Human-Computer Interaction · Human-Centered AI. I study how AI systems can adapt to people while supporting, rather than replacing, human judgment and agency.">
 <meta property="og:url" content="https://nmoursi.github.io/">
 <meta property="og:image" content="https://nmoursi.github.io/images/nada.jpg">
 <meta name="twitter:card" content="summary">
+
+<!-- resolve the theme before first paint so there is no flash -->
+<script>
+(function () {
+  var stored = null;
+  try { stored = localStorage.getItem('theme'); } catch (e) {}
+  var root = document.documentElement;
+  if (stored === 'light' || stored === 'dark') {
+    root.setAttribute('data-theme', stored);
+    root.setAttribute('data-theme-source', 'user');
+  } else {
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    root.setAttribute('data-theme-source', 'system');
+  }
+})();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,9 +53,12 @@
     </div>
 
     <h1 class="name">Nada&nbsp;Moursi</h1>
-    <p class="tagline">Human–Computer Interaction<br>Human-Centered AI</p>
+    <p class="tagline">Human-Computer Interaction<br>Human-Centered AI</p>
 
-    <p class="status"><span class="dot" aria-hidden="true"></span>Research Assistant, Northeastern HCAI Lab</p>
+    <p class="affil">
+      M.S. Student &amp; Research Assistant<br>
+      <span class="org">Northeastern University</span>
+    </p>
 
     <nav class="links" aria-label="Profiles and contact">
       <a href="mailto:moursi.n@northeastern.edu">Email</a>
@@ -47,12 +67,24 @@
       <a href="https://linkedin.com/in/nadamoursi1" rel="me">LinkedIn</a>
     </nav>
 
+    <button id="theme-toggle" class="theme-btn" type="button" aria-live="polite">
+      <svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+      <svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/>
+      </svg>
+      <span class="theme-label">Dark mode</span>
+    </button>
+
     <nav class="toc" aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#interests">Research Interests</a>
       <a href="#research">Research</a>
+      <a href="#updates">Updates</a>
       <a href="#publications">Publications</a>
-      <a href="#news">News</a>
       <a href="#experience">Experience</a>
     </nav>
   </aside>
@@ -65,86 +97,30 @@
       <h2>About</h2>
 
       <p class="lede">
-        I study how people interact with AI systems, and how we can design those systems to
-        better support human goals, judgment, and behavior.
+        Hi! I'm Nada. I'm a master's student in Applied Artificial Intelligence at
+        <strong>Northeastern University</strong>, where I'm a Research Assistant in the
+        <strong>Human-Centered AI Lab</strong>, working with <strong>Prof. Dakuo Wang</strong>.
       </p>
 
       <p>
-        My research sits at the intersection of <strong>human-computer interaction</strong> and
-        <strong>human-centered AI</strong>, with current work on AI agents, adaptive systems, and
-        tools that support people in complex research and learning tasks.
+        My research examines <strong>how AI systems can adapt to people while supporting, rather
+        than replacing, human judgment and agency</strong>. I've been studying this by building
+        AI agents that help UX researchers evaluate and refine usability studies, developing
+        evidence-grounded methods for analyzing agent behavior, and evaluating AI-driven
+        personalization through randomized experiments in real-world environments.
       </p>
 
       <p>
-        I'm a master's student and Research Assistant in the Human-Centered AI Lab at Northeastern
-        University, working with Prof. Dakuo Wang. I approach these questions through a combination
-        of <strong>system building, qualitative research, and large-scale behavioral experiments</strong> —
-        from building agentic tools that help UX researchers analyze and revise usability studies, to
-        evaluating AI-driven personalization through randomized experiments in a live online environment.
+        More broadly, I'm interested in human-AI interaction, adaptive and personalized systems,
+        AI-supported research and design, and applications of human-centered AI to learning and
+        well-being.
       </p>
 
-      <p class="quiet">
-        Before graduate school I was a Product Manager at Microsoft, designing and evaluating
-        consumer product experiences through experimentation and behavioral analysis. That's where
-        my interest in studying what people actually do — rather than what they report — began.
+      <p>
+        Before returning to graduate school, I worked in product at <strong>Microsoft</strong>,
+        where I became interested in how the design of intelligent systems shapes what people
+        actually experience and do.
       </p>
-
-      <!-- 10-second read: what I'm working on right now -->
-      <div class="current">
-        <p class="current-label">Current research</p>
-
-        <a class="current-item" href="#uxagent">
-          <span class="ci-title">UXAgent V2</span>
-          <span class="ci-q">How can AI agents help researchers improve usability studies without replacing human judgment?</span>
-        </a>
-
-        <a class="current-item" href="#adaptive">
-          <span class="ci-title">Adaptive Learning in the Wild</span>
-          <span class="ci-q">When does AI-driven personalization actually improve people's behavior and learning?</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ============ RESEARCH INTERESTS ============ -->
-    <section id="interests">
-      <h2>Research Interests</h2>
-
-      <p class="lede-sm">
-        I'm broadly interested in designing and studying human-centered AI systems that adapt to
-        people while preserving human agency and judgment. Three questions drive my work:
-      </p>
-
-      <div class="interest">
-        <h3>Human–AI Interaction</h3>
-        <p>
-          How do people understand, trust, and work with increasingly agentic AI systems, and how
-          should these systems communicate their capabilities and limitations?
-        </p>
-      </div>
-
-      <div class="interest">
-        <h3>Adaptive &amp; Personalized AI</h3>
-        <p>
-          When does adaptation meaningfully improve people's experiences and outcomes, and how
-          should systems respond to differences in users' goals, motivations, and behavior?
-        </p>
-      </div>
-
-      <div class="interest">
-        <h3>AI as a Research Partner</h3>
-        <p>
-          How can AI agents support complex knowledge work such as UX research without obscuring
-          evidence, uncertainty, or human judgment?
-        </p>
-      </div>
-
-      <dl class="methods">
-        <dt>Methods</dt>
-        <dd>Mixed-methods HCI research, interviews, qualitative coding, thematic analysis,
-            randomized field experiments, regression and interaction analysis</dd>
-        <dt>Technical</dt>
-        <dd>Python, SQL, LLM-agent systems, FastAPI, React, statistical analysis</dd>
-      </dl>
     </section>
 
     <!-- ============ RESEARCH ============ -->
@@ -154,30 +130,26 @@
       <!-- ---- UXAgent V2 ---- -->
       <article class="project" id="uxagent">
         <p class="project-kicker">UXAgent V2</p>
-        <h3>Designing AI Agents to Support UX Research</h3>
-        <p class="project-areas">Human–AI Interaction · LLM Agents · UX Research · Qualitative Methods</p>
+        <h3>AI Agents for Supporting UX Research</h3>
 
         <blockquote class="rq">
-          <span class="rq-label">Research question</span>
-          How can AI agents help UX researchers identify problems in a usability study before
-          recruiting human participants, while keeping researchers in control of interpretation
-          and evidence?
+          How can AI agents help researchers identify weaknesses in usability studies while
+          preserving human judgment and traceability?
         </blockquote>
 
         <p>
-          UXAgent is an LLM-agent system for simulating and analyzing usability studies. In V2 we
-          investigate a broader question: rather than replacing human participants, can simulated
-          interactions serve as an <strong>early design-feedback mechanism</strong> that helps
-          researchers find weaknesses and revise study protocols before running human pilots?
+          UXAgent lets UX researchers dry-run a usability study with simulated participants before
+          recruiting real ones. In V2 I work on the part that decides whether the output is
+          trustworthy: how simulated sessions get analyzed, and whether the findings that come out
+          can be traced back to evidence a researcher can actually check.
         </p>
 
         <h4>My contributions</h4>
         <p>
-          I work across both the research and system sides of V2. I contributed to the literature
-          review and study framing, designed the qualitative-analysis architecture, and implemented
-          a three-stage agentic coding pipeline that transforms interaction traces into session-level
-          codes, coordinates codes across sessions into a consolidated codebook, and produces
-          evidence-grounded cross-session summaries.
+          I contributed to the literature review and study framing, designed the qualitative-analysis
+          architecture, and implemented a three-stage coding pipeline that turns interaction traces
+          into session-level codes, coordinates those codes across sessions into a consolidated
+          codebook, and produces evidence-grounded summaries.
         </p>
 
         <ol class="flow" aria-label="Analysis pipeline">
@@ -189,36 +161,27 @@
         </ol>
 
         <p>
-          I also built the researcher-facing mechanisms for inspecting and revising generated codes,
-          and the evidence-grounding requirements that tie every reported finding back to code
-          prevalence and the supporting interaction evidence — so a researcher can audit a claim
-          rather than trust it.
-        </p>
-
-        <p>
-          Alongside the system, I run the empirical work that tests whether any of it holds up: the
-          <strong>evaluation study protocol</strong> and its gold-standard quality target, and a
-          <strong>formative interview study</strong> with UX practitioners on how study designs
-          actually get validated today, and where pilots fall short.
+          I also built the researcher-facing tools for reviewing and revising the generated codes,
+          and I run the empirical work around the system: an evaluation study of the analysis
+          quality, and a formative interview study with UX practitioners on how study designs get
+          validated today.
         </p>
       </article>
 
       <!-- ---- Adaptive Learning ---- -->
       <article class="project" id="adaptive">
         <p class="project-kicker">Adaptive Learning in the Wild</p>
-        <h3>When Does AI Personalization Actually Help?</h3>
-        <p class="project-areas">First author · Submitted to KDD 2027</p>
+        <h3>Evaluating AI Personalization Through a Randomized Field Experiment</h3>
 
         <blockquote class="rq">
-          <span class="rq-label">Research question</span>
-          Does adapting an experience to a user's estimated knowledge actually improve engagement
-          and learning in a real-world environment?
+          When does adapting an experience to a person's estimated knowledge actually improve
+          engagement and learning?
         </blockquote>
 
         <p>
-          We study this through a randomized field experiment in a live Roblox financial-literacy
-          game, comparing a fixed progression against AI-driven quest selection using Bayesian
-          Knowledge Tracing — in collaboration with Carnegie Mellon University and U.S. Bank.
+          A randomized field experiment in a live Roblox financial-literacy game, comparing a fixed
+          quest progression against AI-driven quest selection using Bayesian Knowledge Tracing, in
+          collaboration with Carnegie Mellon University and U.S. Bank.
         </p>
 
         <h4>My role</h4>
@@ -234,6 +197,33 @@
           Behavioral telemetry
         </p>
       </article>
+
+      <dl class="methods">
+        <dt>Methods</dt>
+        <dd>Mixed-methods HCI research, interviews, qualitative coding, thematic analysis,
+            randomized field experiments, regression and interaction analysis</dd>
+        <dt>Technical</dt>
+        <dd>Python, SQL, LLM-agent systems, FastAPI, React, statistical analysis</dd>
+      </dl>
+    </section>
+
+    <!-- ============ UPDATES ============ -->
+    <section id="updates">
+      <h2>Updates</h2>
+      <ul class="news">
+        <li>
+          <span class="when">2026</span>
+          <span class="what"><em>Adaptive Learning in the Wild</em> submitted to <strong>KDD 2027</strong> as first author.</span>
+        </li>
+        <li>
+          <span class="when">2026</span>
+          <span class="what">Building <em>UXAgent</em> V2, extending UXAgent with evidence-grounded qualitative analysis and a new evaluation of AI-supported usability-study revision.</span>
+        </li>
+        <li>
+          <span class="when">Dec 2025</span>
+          <span class="what">Joined Prof. Dakuo Wang's Human-Centered AI Lab at Northeastern University.</span>
+        </li>
+      </ul>
     </section>
 
     <!-- ============ PUBLICATIONS ============ -->
@@ -265,29 +255,6 @@
       </p>
     </section>
 
-    <!-- ============ NEWS ============ -->
-    <section id="news">
-      <h2>News</h2>
-      <ul class="news">
-        <li>
-          <span class="when">2026</span>
-          <span class="what"><em>Adaptive Learning in the Wild</em> submitted to <strong>KDD 2027</strong> as first author.</span>
-        </li>
-        <li>
-          <span class="when">2026</span>
-          <span class="what">Building <em>UXAgent</em> V2 — agentic analysis pipeline, evaluation protocol, and a formative interview study with UX practitioners.</span>
-        </li>
-        <li>
-          <span class="when">Dec 2025</span>
-          <span class="what">Joined the Human-Centered AI Lab at Northeastern as a Research Assistant.</span>
-        </li>
-        <li>
-          <span class="when">Sep 2025</span>
-          <span class="what">Started the M.S. in Applied Artificial Intelligence at Northeastern University.</span>
-        </li>
-      </ul>
-    </section>
-
     <!-- ============ EXPERIENCE & EDUCATION ============ -->
     <section id="experience">
       <h2>Experience &amp; Education</h2>
@@ -297,7 +264,7 @@
         <div class="what">
           <h3>Research Assistant</h3>
           <p class="role">Human-Centered AI Lab, Northeastern University</p>
-          <p>Human–AI interaction, AI agents, and adaptive systems.</p>
+          <p>Human-AI interaction, AI agents, and adaptive systems.</p>
         </div>
       </article>
 
@@ -369,7 +336,42 @@
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// sidebar nav follows the section in view
+/* ---------- theme toggle ---------- */
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('theme-toggle');
+  var label = btn.querySelector('.theme-label');
+  var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+  function sync() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    // the button offers the theme you'd switch TO
+    label.textContent = isDark ? 'Light mode' : 'Dark mode';
+    btn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    root.setAttribute('data-theme-source', 'user');
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    sync();
+  });
+
+  // keep following the OS while the visitor hasn't picked a theme themselves
+  if (mq && mq.addEventListener) {
+    mq.addEventListener('change', function (e) {
+      if (root.getAttribute('data-theme-source') !== 'user') {
+        root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        sync();
+      }
+    });
+  }
+
+  sync();
+})();
+
+/* ---------- sidebar nav follows the section in view ---------- */
 (function () {
   var links = [].slice.call(document.querySelectorAll('.toc a'));
   if (!links.length || !('IntersectionObserver' in window)) return;
