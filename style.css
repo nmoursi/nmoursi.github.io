@@ -406,6 +406,21 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid var(--rule);
 }
 
+.pub-link {
+  display: inline-block;
+  margin-left: .55rem;
+  font-family: var(--mono);
+  font-size: .68rem; font-weight: 500;
+  letter-spacing: .04em;
+  padding: .24rem .55rem;
+  border: 1px solid var(--rule); border-radius: 5px;
+  color: var(--muted);
+}
+.pub-link:hover {
+  color: var(--accent); border-color: var(--accent);
+  background: var(--accent-bg); border-bottom-color: var(--accent);
+}
+
 .subhead {
   font-size: .74rem; font-weight: 600;
   letter-spacing: .12em; text-transform: uppercase;
