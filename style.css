@@ -177,8 +177,8 @@ strong { font-weight: 600; }
   color: var(--muted);
 }
 .affil .org { color: var(--text); font-weight: 500; }
-.affil a { color: var(--muted); border-bottom: 1px solid var(--rule); }
-.affil a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.affil a { color: var(--accent); border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+.affil a:hover { border-bottom-color: var(--accent); }
 
 .links { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1rem; }
 .links a {
@@ -480,6 +480,7 @@ p:last-child { margin-bottom: 0; }
   margin: 0 0 .1rem;
 }
 .role { font-size: .855rem; color: var(--muted); margin: 0 0 .35rem; }
+.role a, .news a, .what a { color: var(--accent); }
 .what p:last-child { font-size: .94rem; color: var(--muted); margin-bottom: 0; }
 
 /* ============ footer ============ */
