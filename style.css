@@ -133,7 +133,7 @@ strong { font-weight: 600; }
 }
 
 /* ============ sidebar ============ */
-.photo-wrap { position: relative; width: 152px; margin-bottom: 1.4rem; }
+.photo-wrap { position: relative; width: 176px; margin-bottom: 1.5rem; }
 .photo-wrap::before {
   content: "";
   position: absolute; inset: -22px;
@@ -145,7 +145,7 @@ strong { font-weight: 600; }
 }
 
 .photo {
-  width: 152px; height: 152px;
+  width: 176px; height: 176px;
   object-fit: cover; border-radius: 50%;
   display: block; box-shadow: var(--shadow);
 }
@@ -157,7 +157,7 @@ strong { font-weight: 600; }
 
 .name {
   font-family: var(--serif);
-  font-size: 2.1rem; font-weight: 500;
+  font-size: 2.25rem; font-weight: 500;
   line-height: 1.08; letter-spacing: -0.018em;
   margin: 0 0 .45rem;
 }
@@ -439,6 +439,17 @@ p:last-child { margin-bottom: 0; }
   border-top: 1px solid var(--rule);
 }
 .earlier { font-size: .94rem; color: var(--muted); }
+
+.group-label {
+  font-family: var(--mono);
+  font-size: .66rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent);
+  margin: 1.9rem 0 .9rem;
+}
+.group-label:first-of-type { margin-top: 0; }
+/* an entry that opens a group shouldn't keep the top divider */
+.group-label + .entry { border-top: 0; padding-top: 0; }
 
 /* ============ updates ============ */
 .news { list-style: none; margin: 0; padding: 0; }

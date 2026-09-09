@@ -48,7 +48,7 @@
   <!-- ================= SIDEBAR ================= -->
   <aside class="sidebar">
     <div class="photo-wrap">
-      <img class="photo" src="images/nada.jpg" alt="Nada Moursi" width="152" height="152"
+      <img class="photo" src="images/nada.jpg" alt="Nada Moursi" width="176" height="176"
            onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo photo-fallback',textContent:'NM'}))">
     </div>
 
@@ -113,8 +113,9 @@
       </p>
 
       <p>
-        More broadly, I'm interested in human-AI interaction, adaptive and personalized systems,
-        AI-supported research and design, and applications of human-centered AI to learning and
+        More broadly, I'm interested in how people understand and work with increasingly adaptive
+        and agentic AI systems, and how we can design these systems around people's goals,
+        behavior, and experiences. I'm particularly interested in applications to learning and
         well-being.
       </p>
 
@@ -141,10 +142,11 @@
         </blockquote>
 
         <p>
-          UXAgent lets UX researchers dry-run a usability study with simulated participants before
-          recruiting real ones. In V2 I work on the part that decides whether the output is
-          trustworthy: how simulated sessions get analyzed, and whether the findings that come out
-          can be traced back to evidence a researcher can actually check.
+          UXAgent lets UX researchers dry-run usability studies with simulated participants before
+          recruiting human participants. In V2 I focus on making the resulting analyses more
+          inspectable and evidence-grounded: how simulated sessions are analyzed, how findings are
+          synthesized across sessions, and how researchers can trace those findings back to the
+          underlying interaction evidence.
         </p>
 
         <h4>My contributions</h4>
@@ -164,9 +166,9 @@
         </ol>
 
         <p>
-          I also built the researcher-facing tools for reviewing and revising the generated codes,
-          and I run the empirical work around the system: an evaluation study of the analysis
-          quality, and a formative interview study with UX practitioners on how study designs get
+          I also developed researcher-facing tools for reviewing and revising generated codes, and
+          contribute to the empirical evaluation of the system, including analysis-quality
+          evaluation and a formative interview study with UX practitioners on how study designs get
           validated today.
         </p>
       </article>
@@ -174,7 +176,7 @@
       <!-- ---- Adaptive Learning ---- -->
       <article class="project" id="adaptive">
         <p class="project-kicker">Adaptive Learning in the Wild</p>
-        <h3>Evaluating AI Personalization Through a Randomized Field Experiment</h3>
+        <h3>Evaluating Adaptive AI in the Wild</h3>
 
         <blockquote class="rq">
           When does adapting an experience to a person's estimated knowledge actually improve
@@ -182,9 +184,10 @@
         </blockquote>
 
         <p>
-          A randomized field experiment in a live Roblox financial-literacy game, comparing a fixed
-          quest progression against AI-driven quest selection using Bayesian Knowledge Tracing, in
-          collaboration with Carnegie Mellon University and U.S. Bank.
+          A randomized field experiment in a live Roblox learning environment, comparing fixed quest
+          progression with AI-driven quest selection using Bayesian Knowledge Tracing. The game
+          embeds learning activities around financial decision-making within an open-world virtual
+          environment. In collaboration with Carnegie Mellon University and U.S. Bank.
         </p>
 
         <h4>My role</h4>
@@ -206,7 +209,7 @@
         <dd>Mixed-methods HCI research, interviews, qualitative coding, thematic analysis,
             randomized field experiments, regression and interaction analysis</dd>
         <dt>Technical</dt>
-        <dd>Python, SQL, LLM-agent systems, FastAPI, React, statistical analysis</dd>
+        <dd>Python, SQL, LLM-agent systems, FastAPI, React</dd>
       </dl>
     </section>
 
@@ -268,12 +271,9 @@
           <a class="pub-link" href="https://doi.org/10.36227/techrxiv.177040642.26830215/v1">Preprint&nbsp;↗</a>
         </p>
         <p>
-          An empirical comparison of agentic AI frameworks — AutoGen, AutoGPT, OpenAgents,
-          OpenHands, Claude, and Gemini — against manually engineered pipelines on the same
-          research-intelligence tasks. The frameworks produce professional-looking code quickly,
-          but none yielded a working pipeline without extensive human intervention, which motivates
-          hybrid designs that use AI for bounded, verifiable subtasks inside deterministic backbones.
-        </p>
+          An empirical comparison of agentic AI frameworks and manually engineered
+          research-intelligence pipelines, examining reliability, scientific validity, development
+          effort, and the role of human oversight in complex AI workflows.</p>
       </article>
 
       <h3 class="subhead">Earlier Research</h3>
@@ -288,31 +288,15 @@
     <section id="experience">
       <h2>Experience &amp; Education</h2>
 
+      <h3 class="group-label">Academic</h3>
+
       <article class="entry">
         <p class="when">2025 —<br>Present</p>
         <div class="what">
           <h3>Research Assistant</h3>
           <p class="role"><a href="https://hailab.io">Human-Centered AI Lab</a>, Northeastern University</p>
-          <p>Human-AI interaction, AI agents, and adaptive systems, advised by
-             <a href="https://www.dakuowang.com/">Prof. Dakuo Wang</a>.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <p class="when">2024 —<br>2025</p>
-        <div class="what">
-          <h3>Product Manager</h3>
-          <p class="role">Microsoft</p>
-          <p>Designed and evaluated consumer product experiences through experimentation and
-             behavioral analysis.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <p class="when">2026 —<br>Present</p>
-        <div class="what">
-          <h3>IT Delivery Project Management</h3>
-          <p class="role">State Street — Charles River Development</p>
+          <p>Research in human-AI interaction, AI agents, and adaptive systems under the
+             supervision of <a href="https://www.dakuowang.com/">Prof. Dakuo Wang</a>.</p>
         </div>
       </article>
 
@@ -329,6 +313,26 @@
         <div class="what">
           <h3>B.Sc. Computer Science</h3>
           <p class="role">The American University in Cairo</p>
+        </div>
+      </article>
+
+      <h3 class="group-label">Industry</h3>
+
+      <article class="entry">
+        <p class="when">2024 —<br>2025</p>
+        <div class="what">
+          <h3>Product Manager</h3>
+          <p class="role">Microsoft</p>
+          <p>Designed and evaluated consumer product experiences through experimentation and
+             behavioral analysis.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="when">2026 —<br>Present</p>
+        <div class="what">
+          <h3>IT Delivery Project Management</h3>
+          <p class="role">State Street — Charles River Development</p>
         </div>
       </article>
     </section>
