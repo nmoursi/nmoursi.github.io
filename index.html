@@ -85,7 +85,6 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#updates">Updates</a>
-      <a href="#publications">Papers</a>
       <a href="#experience">Experience</a>
     </nav>
   </aside>
@@ -131,32 +130,41 @@
     <section id="research">
       <h2>Research</h2>
 
-      <!-- ---- UXAgent V2 ---- -->
-      <article class="project" id="uxagent">
-        <p class="project-kicker">UXAgent V2</p>
-        <h3>AI Agents for Supporting UX Research</h3>
+      <article class="work">
+        <h3 class="work-title">Adaptive Learning in the Wild: A Randomized Trial of AI-Driven
+          Quest Selection on Roblox</h3>
+        <p class="work-authors"><strong>Nada Moursi</strong>, <a href="https://www.dakuowang.com/">Dakuo Wang</a>,
+          Kai-Min Kevin Chang, Raheem Ahmad, Katharine Stofer, Sarah Antus, Yi-Chia Wang</p>
+        <p class="work-venue"><em>Under submission</em><span class="pill">KDD 2027</span></p>
+        <p class="work-desc">
+          A randomized field experiment in a live Roblox learning environment, comparing fixed quest
+          progression with AI-driven quest selection using Bayesian Knowledge Tracing. I lead the
+          study framing, statistical analysis, interpretation, and manuscript development across
+          engagement, assessment performance, skill progression, motivation, and reward
+          participation.
+        </p>
+        <p class="work-meta">Northeastern University · U.S. Bank · Carnegie Mellon University</p>
+      </article>
 
-        <blockquote class="rq">
-          How can AI agents help researchers identify weaknesses in usability studies while
-          preserving human judgment and traceability?
-        </blockquote>
-
-        <p>
+      <article class="work" id="uxagent">
+        <h3 class="work-title">UXAgent: Simulating Usability Testing of Web Design with LLM Agents
+          as Participants</h3>
+        <p class="work-authors">Co-author</p>
+        <p class="work-venue"><em>Manuscript</em><span class="pill pill-review">In review</span></p>
+        <p class="work-desc">
           UXAgent lets UX researchers dry-run usability studies with simulated participants before
-          recruiting human participants. In V2 I focus on making the resulting analyses more
-          inspectable and evidence-grounded: how simulated sessions are analyzed, how findings are
-          synthesized across sessions, and how researchers can trace those findings back to the
-          underlying interaction evidence.
+          recruiting human participants. In V2 I focus on making the resulting analyses inspectable
+          and evidence-grounded: how simulated sessions are analyzed, how findings are synthesized
+          across sessions, and how researchers can trace those findings back to the underlying
+          interaction evidence.
         </p>
-
-        <h4>My contributions</h4>
-        <p>
+        <p class="work-desc">
           I contributed to the literature review and study framing, designed the qualitative-analysis
-          architecture, and implemented a three-stage coding pipeline that turns interaction traces
-          into session-level codes, coordinates those codes across sessions into a consolidated
-          codebook, and produces evidence-grounded summaries.
+          architecture, and implemented a three-stage coding pipeline. I also developed
+          researcher-facing tools for reviewing and revising generated codes, and contribute to the
+          empirical evaluation, including analysis-quality evaluation and a formative interview study
+          with UX practitioners.
         </p>
-
         <ol class="flow" aria-label="Analysis pipeline">
           <li>Interaction traces</li>
           <li>Session coding</li>
@@ -164,45 +172,31 @@
           <li>Codebook</li>
           <li>Evidence-grounded findings</li>
         </ol>
-
-        <p>
-          I also developed researcher-facing tools for reviewing and revising generated codes, and
-          contribute to the empirical evaluation of the system, including analysis-quality
-          evaluation and a formative interview study with UX practitioners on how study designs get
-          validated today.
-        </p>
       </article>
 
-      <!-- ---- Adaptive Learning ---- -->
-      <article class="project" id="adaptive">
-        <p class="project-kicker">Adaptive Learning in the Wild</p>
-        <h3>Evaluating Adaptive AI in the Wild</h3>
-
-        <blockquote class="rq">
-          When does adapting an experience to a person's estimated knowledge actually improve
-          engagement and learning?
-        </blockquote>
-
-        <p>
-          A randomized field experiment in a live Roblox learning environment, comparing fixed quest
-          progression with AI-driven quest selection using Bayesian Knowledge Tracing. The game
-          embeds learning activities around financial decision-making within an open-world virtual
-          environment. In collaboration with Carnegie Mellon University and U.S. Bank.
+      <article class="work">
+        <h3 class="work-title">Automating Research Intelligence: Advanced-AI-Generated vs Manually
+          Designed Pipelines</h3>
+        <p class="work-authors">Ruthvik Nath Bandari, Shivam Indraprasad Dubey, Yaqi Guo, Kunal Gupta,
+          Anish Indurthy, Yash Mahavir Jain, Yun-Tang Lin, Ching-Yi Mao, <strong>Nada Moursi</strong>,
+          Om Manojkumar Patel, Kapil Varma, Jialin Wang, Kasin Wasuwanich, Siqi Xiang, Yucheng Yan,
+          Sijia Zhan, Anton V. Sinitskiy</p>
+        <p class="work-venue"><em>TechRxiv, 2026</em><span class="pill pill-quiet">Preprint</span></p>
+        <p class="work-desc">
+          An empirical comparison of agentic AI frameworks and manually engineered
+          research-intelligence pipelines, examining reliability, scientific validity, development
+          effort, and the role of human oversight in complex AI workflows.
         </p>
-
-        <h4>My role</h4>
-        <p>
-          I lead the study framing, statistical analysis, interpretation, and manuscript development
-          across engagement, assessment performance, skill progression, motivation, and
-          reward-participation outcomes.
-        </p>
-
-        <p class="tagline-row">
-          <span class="tl-label">Methods</span>
-          Randomized field experiment · Regression · Interaction analysis · Heterogeneous effects ·
-          Behavioral telemetry
-        </p>
+        <p class="work-meta">Equal-contribution first co-authors, listed alphabetically</p>
+        <p class="work-links"><a href="https://doi.org/10.36227/techrxiv.177040642.26830215/v1">Preprint · TechRxiv</a></p>
       </article>
+
+      <h3 class="subhead">Earlier Research</h3>
+      <p class="earlier">
+        <strong>Ensemble-Based Network Intrusion Detection System</strong> — undergraduate thesis,
+        The American University in Cairo, 2023. Co-authored paper on ensemble ML and deep learning
+        classifiers for intrusion detection.
+      </p>
 
       <dl class="methods">
         <dt>Methods</dt>
@@ -213,7 +207,7 @@
       </dl>
     </section>
 
-    <!-- ============ UPDATES ============ -->
+    <!-- ============ EXPERIENCE & EDUCATION ============ -->
     <section id="updates">
       <h2>Updates</h2>
       <ul class="news">
@@ -236,55 +230,6 @@
       </ul>
     </section>
 
-    <!-- ============ PUBLICATIONS ============ -->
-    <section id="publications">
-      <h2>Papers &amp; Preprints</h2>
-
-      <article class="pub">
-        <h3>Adaptive Learning in the Wild: A Randomized Trial of AI-Driven Quest Selection on Roblox</h3>
-        <p class="authors"><strong>Nada Moursi</strong>, <a href="https://www.dakuowang.com/">Dakuo Wang</a>,
-          Kai-Min Kevin Chang, Raheem Ahmad, Katharine Stofer, Sarah Antus, Yi-Chia Wang</p>
-        <p class="byline">First author <span class="sep">·</span> Northeastern University, U.S. Bank, Carnegie Mellon University</p>
-        <p class="venue"><span class="pill">Submitted · KDD 2027</span></p>
-      </article>
-
-      <article class="pub">
-        <h3>UXAgent: Simulating Usability Testing of Web Design with LLM Agents as Participants</h3>
-        <p class="byline">Co-author</p>
-        <p class="venue"><span class="pill pill-review">In review</span></p>
-        <p>
-          An LLM-agent system that allows UX researchers to dry-run usability studies with simulated
-          participants interacting with live websites. I contribute qualitative coding and thematic
-          analysis to the research.
-        </p>
-      </article>
-
-      <article class="pub">
-        <h3>Automating Research Intelligence: Advanced-AI-Generated vs Manually Designed Pipelines</h3>
-        <p class="authors">Ruthvik Nath Bandari, Shivam Indraprasad Dubey, Yaqi Guo, Kunal Gupta,
-          Anish Indurthy, Yash Mahavir Jain, Yun-Tang Lin, Ching-Yi Mao, <strong>Nada Moursi</strong>,
-          Om Manojkumar Patel, Kapil Varma, Jialin Wang, Kasin Wasuwanich, Siqi Xiang, Yucheng Yan,
-          Sijia Zhan, Anton V. Sinitskiy</p>
-        <p class="byline">Equal-contribution first co-authors, listed alphabetically</p>
-        <p class="venue">
-          <span class="pill pill-quiet">TechRxiv preprint · 2026</span>
-          <a class="pub-link" href="https://doi.org/10.36227/techrxiv.177040642.26830215/v1">Preprint&nbsp;↗</a>
-        </p>
-        <p>
-          An empirical comparison of agentic AI frameworks and manually engineered
-          research-intelligence pipelines, examining reliability, scientific validity, development
-          effort, and the role of human oversight in complex AI workflows.</p>
-      </article>
-
-      <h3 class="subhead">Earlier Research</h3>
-      <p class="earlier">
-        <strong>Ensemble-Based Network Intrusion Detection System</strong> — undergraduate thesis,
-        The American University in Cairo, 2023. Co-authored paper on ensemble ML and deep learning
-        classifiers for intrusion detection.
-      </p>
-    </section>
-
-    <!-- ============ EXPERIENCE & EDUCATION ============ -->
     <section id="experience">
       <h2>Experience &amp; Education</h2>
 

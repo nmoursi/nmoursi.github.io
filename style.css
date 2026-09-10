@@ -269,47 +269,86 @@ p:last-child { margin-bottom: 0; }
 #about p { font-size: 1.01rem; }
 #about .lede { font-size: 1.3rem; }
 
-/* ============ research projects ============ */
-.project {
-  padding: 1.5rem 1.6rem;
-  margin-bottom: 1.6rem;
-  border: 1px solid var(--rule); border-radius: 14px;
-  background: linear-gradient(165deg,
-              color-mix(in srgb, var(--bg-tint) 50%, var(--surface)), var(--surface));
+/* ============ research entries (academic list) ============ */
+.work {
+  padding: 1.55rem 0;
+  border-top: 1px solid var(--rule-soft);
   scroll-margin-top: 2.5rem;
 }
+.work:first-of-type { border-top: 0; padding-top: 0; }
 
-.project-kicker {
+.work-title {
+  font-family: var(--serif);
+  font-size: 1.24rem; font-weight: 500;
+  line-height: 1.32; letter-spacing: -0.005em;
+  color: var(--accent);
+  margin: 0 0 .38rem;
+}
+
+.work-authors {
+  font-size: .855rem; line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 .3rem;
+}
+.work-authors strong { color: var(--text); font-weight: 600; }
+
+.work-venue {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .55rem;
+  font-size: .855rem; color: var(--muted);
+  margin: 0 0 .7rem;
+}
+
+.work-desc {
+  font-size: .95rem;
+  margin: 0 0 .7rem;
+}
+
+.work-meta {
+  font-size: .8rem; color: var(--faint);
+  margin: 0 0 .55rem;
+}
+
+.work-links { display: flex; flex-wrap: wrap; gap: .45rem; margin: .75rem 0 0; }
+.work-links a {
   font-family: var(--mono);
-  font-size: .68rem; font-weight: 500;
-  letter-spacing: .11em; text-transform: uppercase;
-  color: var(--accent); margin: 0 0 .4rem;
+  font-size: .7rem; font-weight: 500;
+  padding: .28rem .7rem;
+  border: 1px solid var(--rule); border-radius: 6px;
+  color: var(--muted);
 }
-.project h3 {
-  font-family: var(--serif);
-  font-size: 1.46rem; font-weight: 500;
-  line-height: 1.24; letter-spacing: -0.01em;
-  margin: 0 0 1.05rem;
+.work-links a:hover {
+  color: var(--accent); border-color: var(--accent);
+  background: var(--accent-bg); border-bottom-color: var(--accent);
 }
-.project h4 {
-  font-size: .74rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  color: var(--faint);
-  margin: 1.5rem 0 .5rem;
-}
-.project p { font-size: .97rem; }
 
-/* research question callout */
-.rq {
-  margin: 0 0 1.2rem;
-  padding: .9rem 1.1rem;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  background: var(--accent-bg);
-  font-family: var(--serif);
-  font-size: 1.1rem; line-height: 1.5;
-  color: var(--text);
+/* status pills */
+.pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .66rem; font-weight: 500;
+  letter-spacing: .06em; text-transform: uppercase;
+  padding: .22rem .58rem; border-radius: 5px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--on-accent);
 }
+.pill-quiet {
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--rule);
+}
+.pill-review {
+  background: transparent; color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.subhead {
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--faint);
+  margin: 2.2rem 0 .7rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+}
+.earlier { font-size: .93rem; color: var(--muted); }
 
 /* pipeline flow — vertical stepped rail */
 .flow {
@@ -333,7 +372,7 @@ p:last-child { margin-bottom: 0; }
   display: grid; place-items: center;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--rule));
-  background: var(--surface);
+  background: var(--bg);
   color: var(--accent);
   font-size: .66rem;
 }
@@ -346,25 +385,10 @@ p:last-child { margin-bottom: 0; }
               color-mix(in srgb, var(--accent) 40%, transparent), var(--rule));
 }
 
-/* methods strip inside a project */
-.tagline-row {
-  margin-top: 1.3rem !important;
-  padding-top: .9rem;
-  border-top: 1px solid var(--rule-soft);
-  font-size: .88rem; color: var(--muted);
-}
-.tl-label {
-  display: block;
-  font-family: var(--mono);
-  font-size: .64rem; font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: .25rem;
-}
-
 /* methods / technical */
 .methods {
-  margin: 1.8rem 0 0; display: grid;
-  padding-top: 1.3rem; border-top: 1px solid var(--rule);
+  margin: 2rem 0 0; display: grid;
+  padding-top: 1.4rem; border-top: 1px solid var(--rule);
 }
 .methods dt {
   font-family: var(--mono);
@@ -379,82 +403,6 @@ p:last-child { margin-bottom: 0; }
   .methods dt { margin-top: 0; }
   .methods dd { margin-top: 0; }
 }
-
-/* ============ publications ============ */
-.pub { padding: 1.1rem 0; border-top: 1px solid var(--rule-soft); }
-.pub:first-of-type { border-top: 0; padding-top: 0; }
-
-.pub h3 {
-  font-family: var(--serif);
-  font-size: 1.2rem; font-weight: 500; line-height: 1.34;
-  margin: 0 0 .3rem;
-}
-.authors {
-  font-size: .84rem; line-height: 1.6;
-  color: var(--muted);
-  margin: 0 0 .3rem;
-}
-.authors strong { color: var(--text); font-weight: 600; }
-
-.byline { font-size: .85rem; color: var(--muted); margin: 0 0 .45rem; }
-.byline .sep { opacity: .5; margin: 0 .12rem; }
-.venue { margin: 0 0 .55rem; }
-.pub p:last-child { font-size: .95rem; margin-bottom: 0; }
-
-.pill {
-  display: inline-block;
-  font-family: var(--mono);
-  font-size: .68rem; font-weight: 500;
-  letter-spacing: .06em; text-transform: uppercase;
-  padding: .24rem .62rem; border-radius: 5px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: var(--on-accent);
-}
-.pill-quiet {
-  background: transparent; color: var(--muted);
-  border: 1px solid var(--rule);
-}
-.pill-review {
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
-}
-
-.pub-link {
-  display: inline-block;
-  margin-left: .55rem;
-  font-family: var(--mono);
-  font-size: .68rem; font-weight: 500;
-  letter-spacing: .04em;
-  padding: .24rem .55rem;
-  border: 1px solid var(--rule); border-radius: 5px;
-  color: var(--muted);
-}
-.pub-link:hover {
-  color: var(--accent); border-color: var(--accent);
-  background: var(--accent-bg); border-bottom-color: var(--accent);
-}
-
-.subhead {
-  font-size: .74rem; font-weight: 600;
-  letter-spacing: .12em; text-transform: uppercase;
-  color: var(--faint);
-  margin: 2rem 0 .7rem;
-  padding-top: 1.3rem;
-  border-top: 1px solid var(--rule);
-}
-.earlier { font-size: .94rem; color: var(--muted); }
-
-.group-label {
-  font-family: var(--mono);
-  font-size: .66rem; font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase;
-  color: var(--accent);
-  margin: 1.9rem 0 .9rem;
-}
-.group-label:first-of-type { margin-top: 0; }
-/* an entry that opens a group shouldn't keep the top divider */
-.group-label + .entry { border-top: 0; padding-top: 0; }
 
 /* ============ updates ============ */
 .news { list-style: none; margin: 0; padding: 0; }
@@ -525,7 +473,7 @@ footer .copy { font-size: .8rem; color: var(--faint); margin-top: .4rem; }
   .sidebar { position: static; margin-bottom: 1.5rem; }
   .photo { width: 90px; height: 90px; }
   .photo-wrap::before { display: none; }
-  .project { border: 1px solid #ccc; background: none; box-shadow: none; }
+  .work { border-top: 1px solid #ccc; }
   section { margin-bottom: 1.5rem; page-break-inside: avoid; }
   a { color: #000; }
 }
