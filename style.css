@@ -291,28 +291,7 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.24; letter-spacing: -0.01em;
   margin: 0 0 1.05rem;
 }
-.project h4 {
-  font-size: .74rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  color: var(--faint);
-  margin: 1.5rem 0 .5rem;
-}
 .project p { font-size: .97rem; }
-
-/* labelled sub-contributions inside a project card */
-.contrib {
-  margin-top: 1.2rem;
-  padding-left: .95rem;
-  border-left: 2px solid var(--rule-soft);
-}
-.contrib h5 {
-  font-size: .845rem; font-weight: 600;
-  letter-spacing: .005em;
-  color: var(--text);
-  margin: 0 0 .28rem;
-}
-.contrib p { font-size: .93rem; color: var(--muted); margin: 0; }
-.contrib .flow { margin: .85rem 0 .1rem; }
 
 /* research question callout */
 .rq {
