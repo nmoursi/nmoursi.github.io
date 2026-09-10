@@ -414,6 +414,11 @@ p:last-child { margin-bottom: 0; }
   background: transparent; color: var(--muted);
   border: 1px solid var(--rule);
 }
+.pill-review {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+}
 
 .pub-link {
   display: inline-block;
