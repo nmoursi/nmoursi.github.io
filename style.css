@@ -293,6 +293,30 @@ p:last-child { margin-bottom: 0; }
 }
 .project p { font-size: .97rem; }
 
+/* project figures */
+.fig {
+  margin: 1.25rem 0 0;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.fig-link { display: block; border-bottom: 0; }
+.fig-link:hover { border-bottom: 0; }
+.fig img {
+  display: block;
+  width: 100%; height: auto;
+  transition: opacity .18s ease;
+}
+.fig-link:hover img { opacity: .9; }
+.fig figcaption {
+  padding: .6rem .85rem .7rem;
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+  font-size: .78rem; line-height: 1.5;
+  color: var(--muted);
+}
+
 /* research question callout */
 .rq {
   margin: 0 0 1.2rem;
@@ -523,6 +547,7 @@ footer .copy { font-size: .8rem; color: var(--faint); margin-top: .4rem; }
   .sidebar { position: static; margin-bottom: 1.5rem; }
   .photo { width: 90px; height: 90px; }
   .photo-wrap::before { display: none; }
+  .fig { break-inside: avoid; }
   .project { border: 1px solid #ccc; background: none; box-shadow: none; }
   section { margin-bottom: 1.5rem; page-break-inside: avoid; }
   a { color: #000; }
