@@ -137,39 +137,76 @@
         <h3>AI Agents for Supporting UX Research</h3>
 
         <blockquote class="rq">
-          How can AI agents help researchers identify weaknesses in usability studies while
-          preserving human judgment and traceability?
+          How can AI agents help researchers identify weaknesses in usability studies before human
+          pilots, while keeping researchers in control of interpretation and evidence?
         </blockquote>
 
         <p>
-          UXAgent lets UX researchers dry-run usability studies with simulated participants before
-          recruiting human participants. In V2 I focus on making the resulting analyses more
-          inspectable and evidence-grounded: how simulated sessions are analyzed, how findings are
-          synthesized across sessions, and how researchers can trace those findings back to the
-          underlying interaction evidence.
+          <strong>UXAgent</strong> is an LLM-agent system that enables UX researchers to simulate
+          usability studies before recruiting human participants. In V2, I work on extending the
+          system beyond simulation toward <strong>researcher-facing analysis and study-design
+          support</strong>: helping researchers interpret simulated behavior, identify recurring
+          usability evidence across sessions, and inspect how generated findings are grounded in the
+          underlying interactions.
         </p>
 
         <h4>My contributions</h4>
         <p>
-          I contributed to the literature review and study framing, designed the qualitative-analysis
-          architecture, and implemented a three-stage coding pipeline that turns interaction traces
-          into session-level codes, coordinates those codes across sessions into a consolidated
-          codebook, and produces evidence-grounded summaries.
+          My work on UXAgent V2 spans <strong>system development, qualitative methodology, and
+          empirical HCI research</strong>. I contributed to the literature review and research
+          framing, developed components of the V2 system, and designed and implemented the
+          qualitative-analysis architecture that transforms raw agent interaction traces into
+          structured, inspectable findings.
         </p>
 
-        <ol class="flow" aria-label="Analysis pipeline">
-          <li>Interaction traces</li>
-          <li>Session coding</li>
-          <li>Cross-session coordination</li>
-          <li>Codebook</li>
-          <li>Evidence-grounded findings</li>
-        </ol>
+        <div class="contrib">
+          <h5>Agentic qualitative-analysis pipeline</h5>
+          <p>
+            I implemented a multi-stage pipeline that performs session-level coding, coordinates
+            codes across simulated participants, constructs a consolidated codebook, and generates
+            cross-session findings grounded in interaction evidence.
+          </p>
+          <ol class="flow" aria-label="Analysis pipeline">
+            <li>Interaction traces</li>
+            <li>Session coding</li>
+            <li>Cross-session coordination</li>
+            <li>Consolidated codebook</li>
+            <li>Evidence-grounded findings</li>
+          </ol>
+        </div>
 
-        <p>
-          I also developed researcher-facing tools for reviewing and revising generated codes, and
-          contribute to the empirical evaluation of the system, including analysis-quality
-          evaluation and a formative interview study with UX practitioners on how study designs get
-          validated today.
+        <div class="contrib">
+          <h5>Researcher-facing system</h5>
+          <p>
+            I developed system components that allow researchers to inspect, review, and revise
+            generated codes and trace higher-level findings back to supporting evidence, keeping
+            human judgment in the analysis loop.
+          </p>
+        </div>
+
+        <div class="contrib">
+          <h5>Formative study</h5>
+          <p>
+            I conducted a formative interview study with UX practitioners to understand how
+            researchers currently validate usability-study designs, what problems can remain
+            undetected before deployment, and where AI-supported simulation could provide useful
+            early feedback.
+          </p>
+        </div>
+
+        <div class="contrib">
+          <h5>Evaluation study</h5>
+          <p>
+            I designed and conducted an evaluation of UXAgent's analysis and study-support
+            capabilities, examining the quality and traceability of its generated findings and how
+            researchers use its feedback when reviewing and revising usability studies.
+          </p>
+        </div>
+
+        <p class="tagline-row">
+          <span class="tl-label">Methods</span>
+          Formative interviews · Qualitative coding · Thematic analysis · LLM agents ·
+          Human-AI interaction · System design &amp; implementation · Empirical evaluation
         </p>
       </article>
 
@@ -179,35 +216,58 @@
         <h3>Evaluating Adaptive AI in the Wild</h3>
 
         <blockquote class="rq">
-          When does adapting an experience to a person's estimated knowledge actually improve
-          engagement and learning?
+          When does adapting an experience to a person's estimated knowledge improve engagement and
+          learning, and for whom does personalization work best?
         </blockquote>
 
         <p>
-          A randomized field experiment in a live Roblox learning environment, comparing fixed quest
-          progression with AI-driven quest selection using Bayesian Knowledge Tracing. The game
-          embeds learning activities around financial decision-making within an open-world virtual
-          environment. In collaboration with Carnegie Mellon University and U.S. Bank.
+          We evaluate AI-driven personalization through a <strong>randomized field experiment in a
+          live Roblox learning environment</strong>. Players were assigned either to a fixed quest
+          progression or to an adaptive condition in which <strong>Bayesian Knowledge Tracing</strong>
+          estimates evolving skill mastery and informs subsequent quest selection. The setting allows
+          us to study personalization under real-world conditions, using behavioral telemetry and
+          learning outcomes rather than relying solely on self-reported measures.
         </p>
 
         <h4>My role</h4>
         <p>
-          I lead the study framing, statistical analysis, interpretation, and manuscript development
-          across engagement, assessment performance, skill progression, motivation, and
-          reward-participation outcomes.
+          As <strong>first author</strong>, I lead the study's quantitative analysis, interpretation,
+          and manuscript development. I evaluate treatment effects across multiple dimensions of
+          player behavior and learning, including playtime, active participation, assessment
+          performance, skill progression, motivation, and reward engagement.
         </p>
+
+        <div class="contrib">
+          <h5>Heterogeneous effects</h5>
+          <p>
+            Beyond estimating average treatment effects, I examine heterogeneous effects to
+            understand when personalization is more or less effective, using interaction and
+            subgroup analyses that investigate whether treatment effects vary with players'
+            motivations, behavioral engagement, and reward participation.
+          </p>
+        </div>
+
+        <div class="contrib">
+          <h5>Why it matters</h5>
+          <p>
+            The broader goal is not simply to ask whether personalization "works", but to understand
+            how adaptive AI interacts with differences between users in a deployed environment.
+          </p>
+        </div>
 
         <p class="tagline-row">
           <span class="tl-label">Methods</span>
-          Randomized field experiment · Regression · Interaction analysis · Heterogeneous effects ·
-          Behavioral telemetry
+          Randomized field experiment · Bayesian Knowledge Tracing · Regression modeling ·
+          Interaction analysis · Heterogeneous treatment effects · Behavioral telemetry
+        </p>
+
+        <p class="tagline-row">
+          <span class="tl-label">Collaboration</span>
+          Northeastern University · Carnegie Mellon University · U.S. Bank
         </p>
       </article>
 
       <dl class="methods">
-        <dt>Methods</dt>
-        <dd>Mixed-methods HCI research, interviews, qualitative coding, thematic analysis,
-            randomized field experiments, regression and interaction analysis</dd>
         <dt>Technical</dt>
         <dd>Python, SQL, LLM-agent systems, FastAPI, React</dd>
       </dl>
