@@ -84,9 +84,8 @@
     <nav class="toc" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#research">Research</a>
-      <a href="#updates">Updates</a>
       <a href="#publications">Papers</a>
-      <a href="#experience">Experience</a>
+      <a href="#background">Background</a>
     </nav>
   </aside>
 
@@ -100,52 +99,39 @@
       <p class="lede">
         Hi! I'm Nada. I'm a master's student in Applied Artificial Intelligence at
         <strong>Northeastern University</strong> and a Research Assistant in the
-        <a href="https://hailab.io"><strong>Human-Centered AI Lab</strong></a>, under the supervision of
+        <a href="https://hailab.io"><strong>Human-Centered AI Lab</strong></a>, advised by
         <a href="https://www.dakuowang.com/"><strong>Prof. Dakuo Wang</strong></a>.
       </p>
 
       <p>
-        My research is in <strong>human-computer interaction and human-centered AI</strong>, with a
-        focus on how AI systems can adapt to people while supporting human judgment and agency.
-        I've been exploring this through AI agents that support UX researchers in evaluating and
-        refining usability studies, and through large-scale randomized experiments studying
-        AI-driven personalization in real-world environments.
-      </p>
-
-      <p>
-        More broadly, I'm interested in how people understand and work with increasingly adaptive
-        and agentic AI systems, and how we can design these systems around people's goals,
-        behavior, and experiences. I'm particularly interested in applications to learning and
-        well-being.
+        My research is in <strong>human-computer interaction and human-centered AI</strong>,
+        focusing on how adaptive and agentic AI systems can support people while preserving human
+        judgment and agency. I study these questions through AI agents for UX research and
+        large-scale experiments of AI-driven personalization in deployed environments.
       </p>
 
       <p>
         Before graduate school, I worked in product at <strong>Microsoft</strong>, which shaped my
-        interest in understanding how intelligent systems behave once they become part of real
-        products and people's everyday experiences.
+        interest in studying how intelligent systems interact with people in real-world products.
       </p>
-
     </section>
 
-    <!-- ============ RESEARCH ============ -->
     <section id="research">
       <h2>Research</h2>
 
-      <!-- ---- UXAgent V2 ---- -->
       <article class="project" id="uxagent">
-        <p class="project-kicker">UXAgent V2</p>
+        <p class="project-kicker">UXAgent</p>
         <h3>AI Agents for Supporting UX Research</h3>
 
         <blockquote class="rq">
-          How can AI agents help researchers identify weaknesses in usability studies before human
-          pilots, while keeping researchers in control of interpretation and evidence?
+          How can AI agents support UX researchers while keeping analysis inspectable and
+          researchers in control?
         </blockquote>
 
         <p>
-          UXAgent is an LLM-agent system that enables UX researchers to simulate usability studies
-          before recruiting human participants. In V2, we are extending the system toward
-          researcher-facing analysis and study-design support, with an emphasis on making generated
-          findings inspectable, traceable, and grounded in interaction evidence.
+          UXAgent is an LLM-agent system for simulating usability studies before human pilots.
+          I contribute across <strong>V1 and V2</strong>, from qualitative analysis to the design
+          and implementation of V2's agentic analysis pipeline.
         </p>
 
         <figure class="fig">
@@ -156,97 +142,54 @@
         </figure>
 
         <p>
-          <strong>My contributions.</strong> I contributed to the literature review and research
-          framing, developed components of the V2 system, and designed and implemented its
-          qualitative-analysis pipeline, which transforms agent interaction traces into session-level
-          codes, coordinates findings across sessions, builds a consolidated codebook, and generates
-          evidence-grounded summaries. I also conducted the formative study with UX practitioners and
-          the evaluation study of the system, and developed researcher-facing tools for reviewing and
-          revising generated codes.
+          <strong>My work.</strong> I developed session-level coding, cross-session coordination,
+          Codebook and Report agent workflows, evidence-grounded reporting, and human-in-the-loop
+          codebook review. I also conducted formative research with UX practitioners and an
+          empirical evaluation of the system.
         </p>
-
-        <ol class="flow" aria-label="Analysis pipeline">
-          <li>Interaction traces</li>
-          <li>Session coding</li>
-          <li>Cross-session coordination</li>
-          <li>Codebook</li>
-          <li>Evidence-grounded findings</li>
-        </ol>
 
         <p class="tagline-row">
           <span class="tl-label">Methods</span>
-          Formative interviews · Qualitative coding · Thematic analysis · LLM agents ·
-          System design · Empirical evaluation
+          Formative interviews · Qualitative analysis · LLM agents · System design ·
+          Empirical evaluation
         </p>
       </article>
 
-      <!-- ---- Adaptive Learning ---- -->
       <article class="project" id="adaptive">
         <p class="project-kicker">Adaptive Learning in the Wild</p>
         <h3>Evaluating Adaptive AI in the Wild</h3>
 
         <blockquote class="rq">
-          When does adapting an experience to a person's estimated knowledge improve engagement and
-          learning, and for whom does personalization work best?
+          When does AI-driven personalization improve people's experiences and outcomes, and for whom?
         </blockquote>
 
         <p>
-          We study this through a randomized field experiment in a live Roblox learning environment,
-          comparing fixed quest progression with AI-driven quest selection using Bayesian Knowledge
-          Tracing. The experiment examines whether adaptive personalization changes engagement,
-          assessment performance, and skill progression under real-world conditions.
+          As <strong>first author</strong>, I study this through a randomized field experiment in a
+          live Roblox learning environment — <strong>31,603 players randomized</strong>, with
+          engagement analyses on 1,778 survey completers — comparing fixed progression with adaptive
+          quest selection using Bayesian Knowledge Tracing.
         </p>
 
-        <figure class="fig">
+        <figure class="fig fig-sm">
           <a class="fig-link" href="images/adaptive-roblox.jpg"><img src="images/adaptive-roblox.jpg" width="1600" height="900" loading="lazy"
                alt="The Roblox learning environment used in the study: a player stands in an open-world town while an in-game guide explains that the goal is to earn money, build a career, and learn about managing money."></a>
           <figcaption>The deployed Roblox learning environment where the randomized trial ran.</figcaption>
         </figure>
 
         <p>
-          <strong>My role.</strong> As first author, I lead the statistical analysis, interpretation,
-          and manuscript development. Beyond average treatment effects, I examine heterogeneous
-          effects across player motivation, behavioral engagement, and reward participation to
-          understand when personalization is more or less effective.
+          I lead the statistical analysis and manuscript development, including heterogeneous-effects
+          analyses examining how personalization varies across motivation, behavioral engagement, and
+          reward participation.
         </p>
 
         <p class="tagline-row">
           <span class="tl-label">Methods</span>
           Randomized field experiment · Bayesian Knowledge Tracing · Regression ·
-          Interaction analysis · Heterogeneous effects · Behavioral telemetry
+          Heterogeneous effects · Behavioral telemetry
         </p>
       </article>
-
-      <dl class="methods">
-        <dt>Technical</dt>
-        <dd>Python, SQL, LLM-agent systems, FastAPI, React</dd>
-      </dl>
     </section>
 
-    <!-- ============ UPDATES ============ -->
-    <section id="updates">
-      <h2>Updates</h2>
-      <ul class="news">
-        <li>
-          <span class="when">Sep 2026</span>
-          <span class="what">Building <em>UXAgent</em> V2, an agentic system for supporting usability-study design and analysis.</span>
-        </li>
-        <li>
-          <span class="when">2026</span>
-          <span class="what"><em>Adaptive Learning in the Wild</em> submitted to <strong>KDD 2027</strong> as first author.</span>
-        </li>
-        <li>
-          <span class="when">Feb 2026</span>
-          <span class="what"><em>Automating Research Intelligence</em> released as a TechRxiv preprint.</span>
-        </li>
-        <li>
-          <span class="when">Dec 2025</span>
-          <span class="what">Joined Northeastern's <a href="https://hailab.io">Human-Centered AI Lab</a> as a Research Assistant.</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- ============ PUBLICATIONS ============ -->
     <section id="publications">
       <h2>Papers &amp; Preprints</h2>
 
@@ -254,19 +197,15 @@
         <h3>Adaptive Learning in the Wild: A Randomized Trial of AI-Driven Quest Selection on Roblox</h3>
         <p class="authors"><strong>Nada Moursi</strong>, <a href="https://www.dakuowang.com/">Dakuo Wang</a>,
           Kai-Min Kevin Chang, Raheem Ahmad, Katharine Stofer, Sarah Antus, Yi-Chia Wang</p>
-        <p class="byline">First author <span class="sep">·</span> Northeastern University, U.S. Bank, Carnegie Mellon University</p>
-        <p class="venue"><span class="pill">Submitted · KDD 2027</span></p>
+        <p class="venue"><span class="pill">First author · Submitted to KDD 2027</span></p>
       </article>
 
       <article class="pub">
         <h3>UXAgent: Simulating Usability Testing of Web Design with LLM Agents as Participants</h3>
-        <p class="byline">Co-author</p>
+        <p class="authors">Yuxuan Lu, Bingsheng Yao, <strong>Nada Moursi</strong>, Hansu Gu,
+          Jing Huang, Jessie Wang, Laurence Li, Jiri Gesi, Qi He, Toby Jia-Jun Li,
+          <a href="https://www.dakuowang.com/">Dakuo Wang</a></p>
         <p class="venue"><span class="pill pill-review">In review</span></p>
-        <p>
-          An LLM-agent system that allows UX researchers to dry-run usability studies with simulated
-          participants interacting with live websites. I contribute qualitative coding and thematic
-          analysis to the research.
-        </p>
       </article>
 
       <article class="pub">
@@ -275,38 +214,27 @@
           Anish Indurthy, Yash Mahavir Jain, Yun-Tang Lin, Ching-Yi Mao, <strong>Nada Moursi</strong>,
           Om Manojkumar Patel, Kapil Varma, Jialin Wang, Kasin Wasuwanich, Siqi Xiang, Yucheng Yan,
           Sijia Zhan, Anton V. Sinitskiy</p>
-        <p class="byline">Equal-contribution first co-authors, listed alphabetically</p>
-        <p class="venue">
-          <span class="pill pill-quiet">TechRxiv preprint · 2026</span>
-          <a class="pub-link" href="https://doi.org/10.36227/techrxiv.177040642.26830215/v1">Preprint&nbsp;↗</a>
-        </p>
-        <p>
-          An empirical comparison of agentic AI frameworks and manually engineered
-          research-intelligence pipelines, examining reliability, scientific validity, development
-          effort, and the role of human oversight in complex AI workflows.</p>
+        <p class="venue"><span class="pill pill-quiet">Preprint · TechRxiv 2026</span>
+          <a class="pub-link" href="https://doi.org/10.36227/techrxiv.177040642.26830215/v1">Paper&nbsp;↗</a></p>
+        <p class="work-meta">Equal-contribution first co-authors, listed alphabetically</p>
       </article>
 
       <h3 class="subhead">Earlier Research</h3>
       <p class="earlier">
         <strong>Ensemble-Based Network Intrusion Detection System</strong> — undergraduate thesis,
-        The American University in Cairo, 2023. Co-authored paper on ensemble ML and deep learning
-        classifiers for intrusion detection.
+        The American University in Cairo, 2023.
       </p>
     </section>
 
-    <!-- ============ EXPERIENCE & EDUCATION ============ -->
-    <section id="experience">
-      <h2>Experience &amp; Education</h2>
-
-      <h3 class="group-label">Academic</h3>
+    <section id="background">
+      <h2>Background</h2>
 
       <article class="entry">
         <p class="when">2025 —<br>Present</p>
         <div class="what">
           <h3>Research Assistant</h3>
-          <p class="role"><a href="https://hailab.io">Human-Centered AI Lab</a>, Northeastern University</p>
-          <p>Research in human-AI interaction, AI agents, and adaptive systems under the
-             supervision of <a href="https://www.dakuowang.com/">Prof. Dakuo Wang</a>.</p>
+          <p class="role"><a href="https://hailab.io">Human-Centered AI Lab</a>, Northeastern University ·
+            Advisor: <a href="https://www.dakuowang.com/">Prof. Dakuo Wang</a></p>
         </div>
       </article>
 
@@ -319,22 +247,10 @@
       </article>
 
       <article class="entry">
-        <p class="when">2023</p>
-        <div class="what">
-          <h3>B.Sc. Computer Science</h3>
-          <p class="role">The American University in Cairo</p>
-        </div>
-      </article>
-
-      <h3 class="group-label">Industry</h3>
-
-      <article class="entry">
         <p class="when">2024 —<br>2025</p>
         <div class="what">
           <h3>Product Manager</h3>
           <p class="role">Microsoft</p>
-          <p>Designed and evaluated consumer product experiences through experimentation and
-             behavioral analysis.</p>
         </div>
       </article>
 
@@ -343,6 +259,14 @@
         <div class="what">
           <h3>IT Delivery Project Management</h3>
           <p class="role">State Street — Charles River Development</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="when">2023</p>
+        <div class="what">
+          <h3>B.Sc. Computer Science</h3>
+          <p class="role">The American University in Cairo</p>
         </div>
       </article>
     </section>
